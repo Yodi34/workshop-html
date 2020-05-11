@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <form action="index.html" method="post">
+        <ul style="list-style-type:circle">
+            <li>
+                <label for="nom">Nom : </label>
+                <input type="text" name="nom" id="nom" required />
+            </li>
+            <li>
+                <label for="prenom">Prenom : </label>
+                <input type="text" name="prenom" id="prenom" required />
+            </li>
+            <li>
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email" required />
+            </li>
+            <li>
+                <label for="tel">Numéro de téléphone : </label>
+                <input type="tel" name="tel" id="tel" minlength="10" maxlength="10" required/>
+            </li>
+            <li>
+                <label for="canal_contact">Canal de contact préféré : </label>
+                <select name="canal_contact" id="Canal de contact préféré" required>
+                    <option value="Email">Email</option>
+                    <option value="Telephone">Téléphone</option>
+                </select>
+            </li>
+            <li>
+                <label for="text">Message : </label>
+                <textarea  maxlength="500" type="message" name="message" id="message" required>
+                </textarea>
+            </li>
+        </ul>
+
+        <button type="submit">Envoyer</button>
+    </form>
+
+</body>
+
+</html>
